@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+    web: 
+        image: ranur/codeigniter:3.11-sessions
+        volumes:
+            - ./dashboard/:/app/myapp
+        ports:
+            - 82:8000
+        networks:
+            - databases
+        container_name: container-dashboard
+networks:
+    databases:
+        external: true
+        

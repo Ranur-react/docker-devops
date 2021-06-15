@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+    web: 
+        image: ranur/codeigniter:3.11-sessions
+        volumes:
+            - ./asset/:/app/myapp
+        ports:
+            - 83:8000
+        networks:
+            - databases
+        container_name: container-assets
+networks:
+    databases:
+        external: true
+        
