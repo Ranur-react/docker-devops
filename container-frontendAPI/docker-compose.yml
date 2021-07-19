@@ -5,7 +5,7 @@ services:
         volumes:
             - ./frontendAPI/:/app/myapp
         ports:
-            - 81:8000
+            - 90:8000
         networks:
             - databases
         container_name: container-frontendAPI
