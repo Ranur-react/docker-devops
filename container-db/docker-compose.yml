@@ -10,12 +10,17 @@ services:
             - databases
         volumes:
             - ./database/db_bm.sql:/docker-entrypoint-initdb.d/dump.sql
-        container_name: mariadb
+        container_name: maridb-master
+
     phpmyadmin:
         image: ranur/phpmyadmin:1.1-links
         ports:
             - 85:80
+        networks:
+            - databases
         container_name: phpmyadmin
+        environment:
+            MYSQL_ROOT_PASSWORD: barangmudo007
 networks:
     databases:
         external: true
