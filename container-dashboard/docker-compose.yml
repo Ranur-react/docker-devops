@@ -9,6 +9,34 @@ services:
         networks:
             - databases
         container_name: container-dashboard
+    web: 
+        image: ranur/codeigniter:3.11-sessions
+        volumes:
+            - ./penjualan/:/app/myapp
+        ports:
+            - 83:8000
+        networks:
+            - databases
+        container_name: container-penjualan-dashboard
+    web: 
+        image: ranur/codeigniter:3.11-sessions
+        volumes:
+            - ./penjualan/:/app/myapp
+        ports:
+            - 84:8000
+        networks:
+            - databases
+        container_name: container-penjualan-dashboard
+    web: 
+        image: ranur/codeigniter:3.11-sessions
+        volumes:
+            - ./gudang/:/app/myapp
+        ports:
+            - 82:8000
+        networks:
+            - databases
+        container_name: container-gudang-dashboard
+    
 networks:
     databases:
         external: true
