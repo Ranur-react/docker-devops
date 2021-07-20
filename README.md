@@ -10,3 +10,8 @@ Jangan Lupa clone dulu setiap files kedalam folder masing"
     docker network create  databases
 
     docker inspect databases
+
+## docker run exec conatiner
+
+
+    docker exec -it <idcontainer> bash

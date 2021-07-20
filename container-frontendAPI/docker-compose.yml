@@ -3,7 +3,7 @@ services:
     web: 
         image: ranur/codeigniter:3.11-sessions
         volumes:
-            - ./frontendAPI/:/app/myapp
+            - ./web-service/:/app/myapp
         ports:
             - 90:8000
         networks:
