@@ -1,0 +1,73 @@
+.login-box {
+    margin: 5% auto;
+}
+
+.login-logo img {
+    width: 120px;
+    height: 130px;
+}
+
+.login-box-msg,
+.register-box-msg {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.text-muted,
+.text-muted a,
+.text-muted:active,
+.text-muted:focus,
+.text-muted[href] {
+    color: #818a91 !important;
+}
+
+.text-muted:hover{
+    text-decoration: underline;
+}
+
+.form-control {
+    border-radius: 3px;
+}
+
+/* .btn-success {
+    color: #fff;
+    border-color: #44a548;
+}
+
+.btn-success {
+    background: #50b755;
+}
+
+.btn-success:active:hover {
+    color: #fff;
+    background-color: #419d45;
+    border-color: #358139;
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success.hover {
+    background-color: #419d45;
+}
+
+.btn-danger {
+    color: #fff;
+    border-color: #ca5e51;
+}
+
+.btn-danger {
+    background: #e46050;
+}
+
+.btn-danger:active:hover {
+    color: #fff;
+    background-color: #e46050;
+    border-color: #b14336;
+}
+
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger.hover {
+    background-color: #e04835;
+} */

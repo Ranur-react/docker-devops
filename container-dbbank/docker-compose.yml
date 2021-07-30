@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+    mariadb:
+        image: docker.io/bitnami/mariadb:10.3
+        environment:
+            - MARIADB_ROOT_PASSWORD=Padri0@@@
+        ports:
+            - 3306:3306
+        networks:
+            - databases
+        volumes:
+            - ./database/db_bm.sql:/docker-entrypoint-initdb.d/dump.sql
+        container_name: maridb-master-bank
+
+    phpmyadmin:
+        image: ranur/phpmyadmin:1.1-links
+        ports:
+            - 45:80
+        networks:
+            - databases
+        container_name: phpmyadmin-bank
+        environment:
+            MYSQL_ROOT_PASSWORD: Padri0@@@
+networks:
+    databases:
+        external: true
+        
+        
