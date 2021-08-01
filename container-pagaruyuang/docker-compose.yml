@@ -14,7 +14,7 @@ services:
         volumes:
             - ./parkir/:/app/myapp
         ports:
-            - 42:8000
+            - 40:8000
         networks:
             - databases
         container_name: container-parkir
