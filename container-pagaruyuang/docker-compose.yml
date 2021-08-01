@@ -9,15 +9,7 @@ services:
         networks:
             - databases
         container_name: container-kasir
-    web2: 
-        image: ranur/codeigniter:3.11-sessions
-        volumes:
-            - ./parkir/:/app/myapp
-        ports:
-            - 40:8000
-        networks:
-            - databases
-        container_name: container-parkir
+
     
     
 networks:
